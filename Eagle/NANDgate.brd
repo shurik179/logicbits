@@ -210,7 +210,7 @@
 <text x="34" y="0" size="8" layer="22" ratio="12" rot="SMR180" align="center">NAND</text>
 <circle x="52" y="0" radius="2" width="1" layer="22"/>
 <circle x="36" y="13" radius="9" width="0.1" layer="21"/>
-<text x="52" y="-20" size="1.778" layer="21" rot="SR90">LogicBits v1.2 by Alexander Kirillov
+<text x="52" y="-20" size="1.778" layer="21" rot="SR90">LogicBits v1.3 by Alexander Kirillov
 github.com/shurik179</text>
 <wire x1="2" y1="12" x2="0" y2="12" width="1" layer="22"/>
 <wire x1="0" y1="-12" x2="2" y2="-12" width="1" layer="22"/>
@@ -231,6 +231,7 @@ github.com/shurik179</text>
 <wire x1="72" y1="7" x2="69" y2="7" width="0.2" layer="22"/>
 <wire x1="72" y1="4" x2="69" y2="4" width="0.2" layer="22"/>
 <wire x1="72" y1="-4" x2="69" y2="-4" width="0.2" layer="22"/>
+<text x="28" y="12" size="1.778" layer="21">JLCJLCJLCJLC</text>
 </plain>
 <libraries>
 <library name="RoverWing-V1.5">
@@ -280,22 +281,19 @@ by exp-lbrs.ulp</description>
 <package name="SPARKFUN_1X03-SMD-MALE">
 <description>&lt;h3&gt;3-Pin Surface Mount 0.1" Male Headers&lt;/h3&gt;
 4UCONN w/o posts: 11182 $0.0353 @ 1000</description>
-<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="51"/>
-<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="51"/>
-<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="51"/>
-<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="51"/>
-<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="51"/>
-<rectangle x1="-0.32" y1="4.15" x2="0.32" y2="5.95" layer="51"/>
-<rectangle x1="-2.86" y1="4.15" x2="-2.22" y2="5.95" layer="51"/>
-<rectangle x1="2.22" y1="4.15" x2="2.86" y2="5.95" layer="51"/>
-<smd name="1" x="-2.54" y="5" dx="3" dy="1" layer="1" rot="R90"/>
-<smd name="2" x="0" y="5" dx="3" dy="1" layer="1" rot="R90"/>
-<smd name="3" x="2.54" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="21"/>
+<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="21"/>
+<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="21"/>
+<smd name="1" x="-2.54" y="5" dx="3" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="0" y="5" dx="3" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="2.54" y="5" dx="3" dy="1" layer="1" rot="R90" cream="no"/>
 </package>
 </packages>
 </library>
@@ -694,12 +692,12 @@ design rules under a new name.</description>
 <wire x1="59.75" y1="1.25" x2="56" y2="1.25" width="0.25" layer="1"/>
 <wire x1="56" y1="1.25" x2="54.75" y2="2.5" width="0.25" layer="1"/>
 <wire x1="54.75" y1="2.5" x2="54.75" y2="7.75" width="0.25" layer="1"/>
-<wire x1="54.75" y1="7.75" x2="55.46" y2="8.46" width="0.25" layer="1"/>
+<wire x1="55.46" y1="8.46" x2="54.75" y2="7.75" width="0.25" layer="1"/>
 <contactref element="IC1" pad="4"/>
 <wire x1="26.3" y1="-1.95" x2="28.3501" y2="-1.95" width="0.25" layer="1"/>
 <wire x1="28.3501" y1="-1.95" x2="28.3601" y2="-1.94" width="0.25" layer="1"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="55.46" y1="8.46" x2="58" y2="8.46" width="0" layer="19" extent="1-1"/>
+<wire x1="58" y1="8.46" x2="55.46" y2="8.46" width="0.25" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R2" pad="1"/>

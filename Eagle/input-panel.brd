@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
@@ -243,9 +243,10 @@
 <text x="39" y="71.5" size="1.5" layer="22" ratio="12" rot="SMR180" align="center">S</text>
 <wire x1="40" y1="90" x2="34" y2="96" width="0" layer="20"/>
 <wire x1="40" y1="6" x2="34" y2="0" width="0" layer="20"/>
-<text x="36" y="35" size="1.778" layer="25" rot="SR180">LogicBits v1.2 
+<text x="36" y="35" size="1.778" layer="25" rot="SR180">LogicBits v1.3 
 by Alexander Kirillov
 github.com/shurik179</text>
+<text x="10" y="2" size="1.778" layer="21" rot="R90">JLCJLCJLCJLC</text>
 </plain>
 <libraries>
 <library name="RoverWing-V1.5">
@@ -297,23 +298,22 @@ by exp-lbrs.ulp</description>
 <description>Generated from &lt;b&gt;logicBlocks-AND-v12.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
 <packages>
-<package name="SPARKFUN-CONNECTORS_1X03_SMD_RA_MALE">
-<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="51"/>
-<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="51"/>
-<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="51"/>
-<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="51"/>
-<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="51"/>
-<rectangle x1="-0.32" y1="4.15" x2="0.32" y2="5.95" layer="51"/>
-<rectangle x1="-2.86" y1="4.15" x2="-2.22" y2="5.95" layer="51"/>
-<rectangle x1="2.22" y1="4.15" x2="2.86" y2="5.95" layer="51"/>
-<smd name="1" x="-2.54" y="5" dx="3" dy="1" layer="1" rot="R90"/>
-<smd name="2" x="0" y="5" dx="3" dy="1" layer="1" rot="R90"/>
-<smd name="3" x="2.54" y="5" dx="3" dy="1" layer="1" rot="R90"/>
+<package name="SPARKFUN_1X03-SMD-MALE">
+<description>&lt;h3&gt;3-Pin Surface Mount 0.1" Male Headers&lt;/h3&gt;
+4UCONN w/o posts: 11182 $0.0353 @ 1000</description>
+<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="21"/>
+<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="21"/>
+<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="21"/>
+<smd name="1" x="-2.54" y="5" dx="3" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="0" y="5" dx="3" dy="1" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="2.54" y="5" dx="3" dy="1" layer="1" rot="R90" cream="no"/>
 </package>
 </packages>
 </library>
@@ -809,7 +809,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C2" library="RoverWing-V1.5" package="0603" value="1uF" x="21" y="12.5" smashed="yes" rot="R180">
+<element name="C1" library="RoverWing-V1.5" package="0603" value="1uF" x="21" y="12.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.145" y="11.065" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="D2" library="RoverWing-V1.5" package="LED-0805" value="" x="25" y="16" smashed="yes" rot="MR180">
@@ -817,16 +817,16 @@ design rules under a new name.</description>
 <attribute name="PARTNO" value="LTST-C170KGKT " x="40.24" y="24.89" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="23.303" y="17.6875" size="0.889" layer="28" ratio="11" rot="MR180"/>
 </element>
-<element name="R3" library="RoverWing-V1.5" package="0603" value="560" x="21" y="16" smashed="yes" rot="R180">
+<element name="R1" library="RoverWing-V1.5" package="0603" value="560" x="21" y="16" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.395" y="16.815" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="R4" library="RoverWing-V1.5" package="0603" value="220" x="21" y="19.5" smashed="yes" rot="R180">
+<element name="R2" library="RoverWing-V1.5" package="0603" value="220" x="21" y="19.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.395" y="20.315" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="U$4" library="RoverWing-V1.5" package="SWITCH-K3-1235S" value="SWITCH-K3-1235S" x="12" y="16" smashed="yes" rot="MR90"/>
-<element name="JP3" library="logicBlocks-AND-v12" package="SPARKFUN-CONNECTORS_1X03_SMD_RA_MALE" value="" x="31" y="22" smashed="yes" rot="R90"/>
-<element name="JP4" library="logicBlocks-AND-v12" package="SPARKFUN-CONNECTORS_1X03_SMD_RA_MALE" value="" x="31" y="10" smashed="yes" rot="R90"/>
-<element name="C3" library="RoverWing-V1.5" package="0603" value="1uF" x="21" y="44.5" smashed="yes" rot="R180">
+<element name="JP3" library="logicBlocks-AND-v12" package="SPARKFUN_1X03-SMD-MALE" value="" x="31" y="22" smashed="yes" rot="R90"/>
+<element name="JP4" library="logicBlocks-AND-v12" package="SPARKFUN_1X03-SMD-MALE" value="" x="31" y="10" smashed="yes" rot="R90"/>
+<element name="C2" library="RoverWing-V1.5" package="0603" value="1uF" x="21" y="44.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.395" y="43.065" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="D3" library="RoverWing-V1.5" package="LED-0805" value="" x="25" y="48" smashed="yes" rot="MR180">
@@ -834,16 +834,16 @@ design rules under a new name.</description>
 <attribute name="PARTNO" value="LTST-C170KGKT " x="40.24" y="56.89" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="23.303" y="49.6875" size="0.889" layer="28" ratio="11" rot="MR180"/>
 </element>
-<element name="R5" library="RoverWing-V1.5" package="0603" value="560" x="21" y="48" smashed="yes" rot="R180">
+<element name="R3" library="RoverWing-V1.5" package="0603" value="560" x="21" y="48" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.395" y="48.815" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="R6" library="RoverWing-V1.5" package="0603" value="220" x="21" y="51.5" smashed="yes" rot="R180">
+<element name="R4" library="RoverWing-V1.5" package="0603" value="220" x="21" y="51.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.395" y="52.065" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="U$6" library="RoverWing-V1.5" package="SWITCH-K3-1235S" value="SWITCH-K3-1235S" x="12" y="48" smashed="yes" rot="MR90"/>
-<element name="JP5" library="logicBlocks-AND-v12" package="SPARKFUN-CONNECTORS_1X03_SMD_RA_MALE" value="" x="31" y="54" smashed="yes" rot="R90"/>
-<element name="JP6" library="logicBlocks-AND-v12" package="SPARKFUN-CONNECTORS_1X03_SMD_RA_MALE" value="" x="31" y="42" smashed="yes" rot="R90"/>
-<element name="C4" library="RoverWing-V1.5" package="0603" value="1uF" x="21" y="76.5" smashed="yes" rot="R180">
+<element name="JP5" library="logicBlocks-AND-v12" package="SPARKFUN_1X03-SMD-MALE" value="" x="31" y="54" smashed="yes" rot="R90"/>
+<element name="JP6" library="logicBlocks-AND-v12" package="SPARKFUN_1X03-SMD-MALE" value="" x="31" y="42" smashed="yes" rot="R90"/>
+<element name="C3" library="RoverWing-V1.5" package="0603" value="1uF" x="21" y="76.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.395" y="75.065" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="D4" library="RoverWing-V1.5" package="LED-0805" value="" x="25" y="80" smashed="yes" rot="MR180">
@@ -851,15 +851,15 @@ design rules under a new name.</description>
 <attribute name="PARTNO" value="LTST-C170KGKT " x="40.24" y="88.89" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="23.303" y="81.6875" size="0.889" layer="28" ratio="11" rot="MR180"/>
 </element>
-<element name="R7" library="RoverWing-V1.5" package="0603" value="560" x="21" y="80" smashed="yes" rot="R180">
+<element name="R5" library="RoverWing-V1.5" package="0603" value="560" x="21" y="80" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.395" y="80.815" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="R8" library="RoverWing-V1.5" package="0603" value="220" x="21" y="83.5" smashed="yes" rot="R180">
+<element name="R6" library="RoverWing-V1.5" package="0603" value="220" x="21" y="83.5" smashed="yes" rot="R180">
 <attribute name="VALUE" x="20.395" y="84.065" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="U$8" library="RoverWing-V1.5" package="SWITCH-K3-1235S" value="SWITCH-K3-1235S" x="12" y="80" smashed="yes" rot="MR90"/>
-<element name="JP7" library="logicBlocks-AND-v12" package="SPARKFUN-CONNECTORS_1X03_SMD_RA_MALE" value="" x="31" y="86" smashed="yes" rot="R90"/>
-<element name="JP8" library="logicBlocks-AND-v12" package="SPARKFUN-CONNECTORS_1X03_SMD_RA_MALE" value="" x="31" y="74" smashed="yes" rot="R90"/>
+<element name="JP7" library="logicBlocks-AND-v12" package="SPARKFUN_1X03-SMD-MALE" value="" x="31" y="86" smashed="yes" rot="R90"/>
+<element name="JP8" library="logicBlocks-AND-v12" package="SPARKFUN_1X03-SMD-MALE" value="" x="31" y="74" smashed="yes" rot="R90"/>
 <element name="J1" library="UJC-HP-3-SMT-TR" package="CUI_UJC-HP-3-SMT-TR" value="UJC-HP-3-SMT-TR" x="6.5" y="64" smashed="yes" rot="R270">
 <attribute name="AVAILABILITY" value="Good" x="6.5" y="64" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="CUI_PURCHASE_URL" value="https://www.cuidevices.com/product/interconnect/connectors/usb-connectors/ujc-hp-3-smt-tr?utm_source=snapeda.com&amp;utm_medium=referral&amp;utm_campaign=snapedaBOM" x="6.5" y="64" size="1.778" layer="27" rot="R270" display="off"/>
@@ -876,7 +876,7 @@ design rules under a new name.</description>
 <signals>
 <signal name="GND">
 <contactref element="D2" pad="-"/>
-<contactref element="C2" pad="1"/>
+<contactref element="C1" pad="1"/>
 <contactref element="U$4" pad="P$3"/>
 <contactref element="JP3" pad="3"/>
 <contactref element="JP4" pad="3"/>
@@ -891,7 +891,7 @@ design rules under a new name.</description>
 <wire x1="28.46" y1="24.54" x2="29.5" y2="23.5" width="0.5" layer="1"/>
 <via x="29.5" y="16" extent="1-16" drill="0.35"/>
 <contactref element="D3" pad="-"/>
-<contactref element="C3" pad="1"/>
+<contactref element="C2" pad="1"/>
 <contactref element="U$6" pad="P$3"/>
 <contactref element="JP5" pad="3"/>
 <contactref element="JP6" pad="3"/>
@@ -906,7 +906,7 @@ design rules under a new name.</description>
 <wire x1="28.46" y1="56.54" x2="29.5" y2="55.5" width="0.5" layer="1"/>
 <via x="29.5" y="48" extent="1-16" drill="0.35"/>
 <contactref element="D4" pad="-"/>
-<contactref element="C4" pad="1"/>
+<contactref element="C3" pad="1"/>
 <contactref element="U$8" pad="P$3"/>
 <contactref element="JP7" pad="3"/>
 <contactref element="JP8" pad="3"/>
@@ -954,8 +954,6 @@ design rules under a new name.</description>
 <wire x1="15.5" y1="13.5" x2="12" y2="13.5" width="0.5" layer="1"/>
 <wire x1="15.5" y1="13.5" x2="19" y2="10" width="0.5" layer="1"/>
 <via x="12" y="45.5" extent="1-16" drill="0.35"/>
-<wire x1="15.5" y1="45.5" x2="12" y2="45.5" width="0.5" layer="1"/>
-<wire x1="19" y1="42" x2="15.5" y2="45.5" width="0.5" layer="1"/>
 <wire x1="15.5" y1="77.5" x2="12" y2="77.5" width="0.5" layer="1"/>
 <wire x1="19" y1="74" x2="15.5" y2="77.5" width="0.5" layer="1"/>
 <contactref element="J1" pad="B9"/>
@@ -985,15 +983,17 @@ design rules under a new name.</description>
 <wire x1="8.75" y1="45.5" x2="12" y2="45.5" width="0.5" layer="16"/>
 <contactref element="JP3" pad="2"/>
 <contactref element="JP4" pad="2"/>
-<wire x1="26" y1="42" x2="19" y2="42" width="0.5" layer="1"/>
 <wire x1="19" y1="10" x2="26" y2="10" width="0.5" layer="1"/>
 <wire x1="26" y1="22" x2="12" y2="22" width="0.5" layer="1"/>
+<wire x1="12" y1="45.5" x2="14.5" y2="45.5" width="0.5" layer="1"/>
+<wire x1="18" y1="42" x2="26" y2="42" width="0.5" layer="1"/>
+<wire x1="14.5" y1="45.5" x2="18" y2="42" width="0.5" layer="1"/>
 <wire x1="26" y1="54" x2="12" y2="54" width="0.5" layer="1"/>
 <wire x1="26" y1="54" x2="26" y2="42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
-<contactref element="R3" pad="2"/>
-<contactref element="R4" pad="2"/>
+<contactref element="R1" pad="2"/>
+<contactref element="R2" pad="2"/>
 <contactref element="U$4" pad="P$2"/>
 <wire x1="15.25" y1="16" x2="13.75" y2="16" width="0.25" layer="16"/>
 <via x="13.75" y="16" extent="1-16" drill="0.35"/>
@@ -1001,8 +1001,8 @@ design rules under a new name.</description>
 <wire x1="20.238" y1="19.5" x2="20.238" y2="16" width="0.25" layer="1"/>
 </signal>
 <signal name="SIGNAL1">
-<contactref element="C2" pad="2"/>
-<contactref element="R4" pad="1"/>
+<contactref element="C1" pad="2"/>
+<contactref element="R2" pad="1"/>
 <contactref element="JP3" pad="1"/>
 <contactref element="JP4" pad="1"/>
 <wire x1="21.75" y1="14" x2="22" y2="14" width="0.25" layer="1"/>
@@ -1021,8 +1021,8 @@ design rules under a new name.</description>
 <wire x1="21" y1="14" x2="20.238" y2="13.238" width="0.25" layer="1"/>
 </signal>
 <signal name="N$2">
-<contactref element="R5" pad="2"/>
-<contactref element="R6" pad="2"/>
+<contactref element="R3" pad="2"/>
+<contactref element="R4" pad="2"/>
 <contactref element="U$6" pad="P$2"/>
 <wire x1="15.25" y1="48" x2="13.5" y2="48" width="0.25" layer="16"/>
 <via x="13.5" y="48" extent="1-16" drill="0.35"/>
@@ -1030,8 +1030,8 @@ design rules under a new name.</description>
 <wire x1="20.238" y1="51.5" x2="20.238" y2="48" width="0.25" layer="1"/>
 </signal>
 <signal name="SIGNAL2">
-<contactref element="C3" pad="2"/>
-<contactref element="R6" pad="1"/>
+<contactref element="C2" pad="2"/>
+<contactref element="R4" pad="1"/>
 <contactref element="JP5" pad="1"/>
 <contactref element="JP6" pad="1"/>
 <wire x1="21.75" y1="46" x2="22" y2="46" width="0.25" layer="1"/>
@@ -1050,8 +1050,8 @@ design rules under a new name.</description>
 <wire x1="21" y1="46" x2="20.238" y2="45.238" width="0.25" layer="1"/>
 </signal>
 <signal name="N$3">
-<contactref element="R7" pad="2"/>
-<contactref element="R8" pad="2"/>
+<contactref element="R5" pad="2"/>
+<contactref element="R6" pad="2"/>
 <contactref element="U$8" pad="P$2"/>
 <wire x1="15.25" y1="80" x2="13.75" y2="80" width="0.25" layer="16"/>
 <via x="13.75" y="80" extent="1-16" drill="0.35"/>
@@ -1059,8 +1059,8 @@ design rules under a new name.</description>
 <wire x1="20.238" y1="83.5" x2="20.238" y2="80" width="0.25" layer="1"/>
 </signal>
 <signal name="SIGNAL3">
-<contactref element="C4" pad="2"/>
-<contactref element="R8" pad="1"/>
+<contactref element="C3" pad="2"/>
+<contactref element="R6" pad="1"/>
 <contactref element="JP7" pad="1"/>
 <contactref element="JP8" pad="1"/>
 <wire x1="21.75" y1="78" x2="22" y2="78" width="0.25" layer="1"/>
@@ -1079,14 +1079,14 @@ design rules under a new name.</description>
 <wire x1="21" y1="78" x2="20.238" y2="77.238" width="0.25" layer="1"/>
 </signal>
 <signal name="N$4">
-<contactref element="R5" pad="1"/>
+<contactref element="R3" pad="1"/>
 <contactref element="D3" pad="+"/>
 <wire x1="21.762" y1="48" x2="23" y2="48" width="0.25" layer="1"/>
 <via x="23" y="48" extent="1-16" drill="0.35"/>
 <wire x1="23" y1="48" x2="24.111" y2="48" width="0.25" layer="16"/>
 </signal>
 <signal name="N$5">
-<contactref element="R3" pad="1"/>
+<contactref element="R1" pad="1"/>
 <contactref element="D2" pad="+"/>
 <wire x1="21.762" y1="16" x2="23" y2="16" width="0.25" layer="1"/>
 <via x="23" y="16" extent="1-16" drill="0.35"/>
@@ -1094,7 +1094,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$6">
 <contactref element="D4" pad="+"/>
-<contactref element="R7" pad="1"/>
+<contactref element="R5" pad="1"/>
 <wire x1="24.111" y1="80" x2="23" y2="80" width="0.25" layer="16"/>
 <via x="23" y="80" extent="1-16" drill="0.35"/>
 <wire x1="21.762" y1="80" x2="23" y2="80" width="0.25" layer="1"/>
