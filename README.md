@@ -1,2 +1,5 @@
-# logicbits
-Logic Gates demonstration kit
+# Logic Gates Demonstration Kit
+![main image](cover-photo,jpg)
+This directory contains files related to my Logic Gate Demonstraiton kit. This project is described in detail in my [Instructable](https://www.instructables.com/Logic-Gates-Demonstration-Kit/).
+
+All files are released under MIT license; see LICENSE file in this directory for details.
