@@ -1,0 +1,13 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,100nF,C_0603_1608Metric,143.0,-109.75,180.0,top
+D1,LED,LITE_ON_LTST_C230TBKT-LED_1206_3216Metric_ReverseMount,126.25,-95.0,90.0,top
+D2,LED,LITE_ON_LTST_C230TBKT-LED_1206_3216Metric_ReverseMount,126.25,-115.0,90.0,top
+D3,LED,LITE_ON_LTST_C230TBKT-LED_1206_3216Metric_ReverseMount,169.5,-105.0,-90.0,top
+J1,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,120.75,-95.0,90.0,top
+J2,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,120.75,-115.0,90.0,top
+J3,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,175.25,-106.25,270.0,top
+J4,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,175.25,-95.25,270.0,top
+R1,330,R_0603_1608Metric,126.25,-91.5,0.0,top
+R2,330,R_0603_1608Metric,126.25,-111.0,0.0,top
+R3,330,R_0603_1608Metric,169.5,-109.5,0.0,top
+U1,74LVC1G86,SOT-23-5,143.3775,-105.984,180.0,top

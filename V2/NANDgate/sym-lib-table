@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ANDgate-v1.5-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/ANDgate-v1.5-eagle-import.kicad_sym")(options "")(descr ""))
+)

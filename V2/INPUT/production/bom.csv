@@ -1,0 +1,10 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+BT1,BatteryHolder_QJ_BS6-CR2032,1,Battery_Cell,C70377
+"C1, C2, C3",0603,3,100nF,C14663
+"D1, D2, D3",LITE_ON_LTST_C230TBKT-LED_1206_3216Metric_ReverseMount,3,LED,C125109
+"J1, J2, J3, J4, J5, J6",Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,6,Conn_01x03_Male,C22075
+P1,USB_C_Receptacle_Korean_Hroparts-31-M-17,1,USB_C_6pin,C283540
+"R1, R3, R5",0603,3,100,C22775
+"R2, R4, R6",0603,3,330,C23138
+"R7, R8",0603,2,5.1k,C23186
+"SW1, SW2, SW3",SW_SPDT_MK_12C02,3,SW_SPDT,C963206

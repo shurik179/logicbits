@@ -1,0 +1,6 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+C1,0603,1,100nF,
+"D1, D2, D3",LITE_ON_LTST_C230TBKT-LED_1206_3216Metric_ReverseMount,3,LED,C125109
+"J1, J2, J3, J4",Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,4,Conn_01x03_Male,
+"R1, R2, R3",0603,3,330,
+U1,SOT-23-5,1,74LVC1G00,C7826

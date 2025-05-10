@@ -205,7 +205,7 @@
 <wire x1="66" y1="0" x2="52" y2="0" width="1" layer="22"/>
 <text x="34" y="0" size="8" layer="22" ratio="12" rot="SMR180" align="center">XOR</text>
 <circle x="36" y="13" radius="9" width="0.1" layer="21"/>
-<text x="52" y="-20" size="1.778" layer="21" rot="SR90">LogicBits v1.2 by Alexander Kirillov
+<text x="52" y="-20" size="1.778" layer="21" rot="SR90">LogicBits v1.3 by Alexander Kirillov
 github.com/shurik179</text>
 <wire x1="2" y1="12" x2="0" y2="12" width="1" layer="22"/>
 <wire x1="0" y1="-12" x2="2" y2="-12" width="1" layer="22"/>

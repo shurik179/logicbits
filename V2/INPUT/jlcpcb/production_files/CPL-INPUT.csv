@@ -1,0 +1,26 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+BT1,Battery_Cell,BatteryHolder_QJ_BS6-CR2032,12.0,-48.0,90.0,top
+C1,100nF,C_0603_1608Metric,27.75,-80.0,90.0,top
+C2,100nF,C_0603_1608Metric,27.75,-48.0,90.0,top
+C3,100nF,C_0603_1608Metric,27.75,-16.0,90.0,top
+D1,LED,LITE_ON_LTST_C230TBKT-LED_1206_3216Metric_ReverseMount,25.0,-80.0,-90.0,top
+D2,LED,LITE_ON_LTST_C230TBKT-LED_1206_3216Metric_ReverseMount,25.0,-48.0,-90.0,top
+D3,LED,LITE_ON_LTST_C230TBKT-LED_1206_3216Metric_ReverseMount,25.000001,-16.000001,-90.0,top
+J1,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,37.25,-74.0,270.0,top
+J2,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,37.25,-86.0,270.0,top
+J3,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,37.25,-42.0,270.0,top
+J4,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,37.25,-54.0,270.0,top
+J5,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,37.25,-10.0,270.0,top
+J6,Conn_01x03_Male,Molex_PicoBlade_53261-0371_1x03-1MP_P1.25mm_Horizontal,37.25,-22.0,270.0,top
+P1,USB_C_6pin,USB_C_Receptacle_Korean_Hroparts-31-M-17,26.162,-2.667,180.0,top
+R1,100,R_0603_1608Metric,21.0,-82.25,0.0,top
+R2,330,R_0603_1608Metric,21.0,-80.0,0.0,top
+R3,100,R_0603_1608Metric,25.0,-54.25,0.0,top
+R4,330,R_0603_1608Metric,25.0,-52.5,0.0,top
+R5,100,R_0603_1608Metric,21.000001,-18.249999,0.0,top
+R6,330,R_0603_1608Metric,21.0,-16.0,0.0,top
+R7,5.1k,R_0603_1608Metric,24.5,-10.5,0.0,top
+R8,5.1k,R_0603_1608Metric,28.0,-10.5,180.0,top
+SW1,SW_SPDT,SW_SPDT_PCM12,2.225,-80.0,90.0,bottom
+SW2,SW_SPDT,SW_SPDT_PCM12,2.0,-48.0,90.0,bottom
+SW3,SW_SPDT,SW_SPDT_PCM12,2.0,-16.0,90.0,bottom
